@@ -9,4 +9,4 @@
 #### 4- If your content is a serie add a file and name it "1".
 
 ## **Preview:**
-[Site preview](Screenshot_2.png "Server Preview!")
+![Site preview](Screenshot_2.png "Server Preview!")
