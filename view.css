@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.view {
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+}
+
+.bk-btn {
+    left: 1rem;
+}
+
+.dn-btn {
+    left: 5rem;
+}
+
+.v-btn {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 3rem;
+    background-color: #3191f7;
+    border-radius: 40px;
+    padding: 5px;
+    display: flex;
+}
+
+.bk-btn img {
+    position: relative;
+    left: -2px;
+}
+
+.v-btn a {
+    width: 40px;
+    height: 40px;
+}
+
+.v-btn:hover {
+    box-shadow: 0px 0px 6px 4px rgb(41, 118, 190);
+}
+
+img:hover {
+    box-shadow: none;
+}
+
+@media screen and (max-width: 799px) {
+    .v-btn {
+        top: 5rem;
+    }
+}
