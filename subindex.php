@@ -19,15 +19,15 @@
         <div class="slide-view" id="slider">
             <div class="r-btn">
                 <button class="btn" onclick="toggleL()">
-                    <img src="./moovie.js-main/icons/left-arrow-svgrepo-com.svg" alt="" srcset="">
+                    <img src="./src/svg/icons/left-arrow-svgrepo-com.svg" alt="" srcset="">
                 </button>
             </div>
             <?php
             $path = $_GET['dir'];
-            $contDir = scandir(".$path");
-            for ($x = 3; $x < count($contDir); $x++) {
+            $contDir = scandir($path);
+            for ($x = 0; $x < count($contDir); $x++) {
                 $cont = $contDir[$x];
-                if ($cont != "poster.jpg") {
+                if ($cont != "poster.jpg" && $cont != '.' && $cont != '..' && $cont != '1') {
                     print("<div class='card'>");
                     print("<a href='view.php?past=$path&link=$path/$cont'><img src='$path/poster.jpg' alt='poster'><p>$cont</p></a>");
                     print("");
@@ -37,7 +37,7 @@
             ?>
             <div class="l-btn">
                 <button class="btn" onclick="toggleR()">
-                    <img src="./moovie.js-main/icons/right-arrow-svgrepo-com.svg" alt="">
+                    <img src="./src/svg/icons/right-arrow-svgrepo-com.svg" alt="">
                 </button>
             </div>
         </div>
